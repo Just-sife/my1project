@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-LookUP</title>
+    <link rel="stylesheet" href="weatherproject.css">
+</head>
+
+<body>
+    <p id="credit">Made By Sifeddine</p>
+    <p id="pic-credit">Casablanca, Morocco</p>
+
+    </p>
+    <div id="loading-screen">
+        <div id="loading-spinner"></div>
+    </div>
+    <main id="main" class="vanish">
+        <div id="search-container">
+            <input type="text" id="search-input" class="hide" placeholder="Search for a place">
+            <button id="search-button" type="submit"><i><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#FFFFFF"
+                            d="M21.39,19.56l-3.81-3.8a9,9,0,1,0-1.41,1.41l3.8,3.81a1,1,0,0,0,.71.29,1,1,0,0,0,.71-1.71ZM10,16A6,6,0,1,1,16,10,6,6,0,0,1,10,16Z" />
+                    </svg></i>
+            </button>
+        </div>
+        <div id="display">
+            <p id="alt-display" class="vanish"></p>
+            <div id="primary-display">
+                <span id="time-display"></span>
+                <section id="display-section">
+                    <h1 id="location"></h1>
+                    <img id="icon" src="" alt="">
+                </section>
+                <h1 id="temp"></h1>
+                <p id="weather-status"></p>
+                <p id="wind-speed"></p>
+                <p id="humidity"></p>
+            </div>
+        </div>
+        <p id="unit-changer">Fahrenheit/Celsius</p>
+    </main>
+    <script src="weatherproject.js"></script>
+    
+</body>
+
+</html>
